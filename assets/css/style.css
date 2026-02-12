@@ -1,0 +1,122 @@
+:root {
+    /* Cores Principais (Branding) */
+    --primary-color: #e31e24;
+    /* Vermelho principal (Botões e Destaques) */
+    --primary-hover: #c1191e;
+    /* Vermelho mais escuro para hover */
+
+    /* Cores de Neutras e Fundo */
+    --bg-dark: #1a1a1a;
+    /* Preto/Cinza escuro do rodapé e seções */
+    --bg-light: #ffffff;
+    /* Branco para fundos de seção */
+    --bg-gray: #f4f4f4;
+    /* Cinza claro para contrastes suaves */
+
+    /* Tipografia */
+    --text-main: #333333;
+    /* Cinza escuro para textos de parágrafo */
+    --text-light: #ffffff;
+    /* Branco para textos sobre fundos escuros */
+    --text-muted: #777777;
+    /* Cinza médio para informações secundárias */
+
+    /* Feedback e Bordas */
+    --border-color: #dddddd;
+    /* Cinza para bordas e divisores */
+    --accent-gold: #c5a059;
+    /* Tom dourado/bronze (ícones mestrão/graduação) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Montserrat config
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+*/
+
+/* Open Sans config
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.main-bg {
+    background-image: url('../img/background.svg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-bg {
+    background-color: var(--bg-light);
+}
+
+.main-content {
+    max-width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 50px;
+
+}
+
+h3 {
+    font-size: 40px;
+
+}
+
+.logo {
+    border-radius: 100%;
+    border: 30px;
+    border-color: var(--bg-gray);
+    height: 60px;
+    width: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.main-header {
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
